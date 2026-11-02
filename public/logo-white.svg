@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="whiteGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAD7B5" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#9E7E56" />
+    </linearGradient>
+    <linearGradient id="whiteDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1918" />
+      <stop offset="100%" stop-color="#0E0E0D" />
+    </linearGradient>
+    <filter id="whiteGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left Emblem Disk -->
+  <g transform="translate(0, 0)">
+    <circle cx="60" cy="60" r="50" fill="url(#whiteDarkBg)" stroke="url(#whiteGoldGrad)" stroke-width="1.5" />
+    <circle cx="60" cy="60" r="44" fill="none" stroke="#C5A880" stroke-width="0.75" stroke-opacity="0.4" stroke-dasharray="2 3" />
+
+    <!-- Stylized R Monogram -->
+    <path d="M 43 38 L 47 38 L 47 82 L 43 82" fill="none" stroke="url(#whiteGoldGrad)" stroke-width="2" stroke-linecap="round" />
+    <path d="M 45 40 L 45 80" fill="none" stroke="url(#whiteGoldGrad)" stroke-width="4" stroke-linecap="square" />
+    
+    <!-- Flowing Hair Wave Upper Bowl -->
+    <path d="M 45 41 C 63 40, 75 45, 75 55 C 75 64, 63 68, 46 68" fill="none" stroke="url(#whiteGoldGrad)" stroke-width="2.6" stroke-linecap="round" />
+    <path d="M 46 45 C 59 44, 68 47, 68 55 C 68 61, 60 65, 46 65" fill="none" stroke="url(#whiteGoldGrad)" stroke-width="0.8" stroke-opacity="0.5" />
+
+    <!-- Wave Swirl Leg -->
+    <path d="M 57 67 C 65 74, 73 80, 84 81" fill="none" stroke="url(#whiteGoldGrad)" stroke-width="2.2" stroke-linecap="round" />
+    
+    <!-- Sparkle Accent -->
+    <g transform="translate(74, 37)">
+      <circle cx="0" cy="0" r="2" fill="url(#whiteGoldGrad)" filter="url(#whiteGlow)" />
+      <path d="M 0 -5 L 0 5 M -5 0 L 5 0" stroke="url(#whiteGoldGrad)" stroke-width="0.8" stroke-linecap="round" />
+    </g>
+
+    <text x="60" y="98" font-family="'Plus Jakarta Sans', sans-serif" font-size="4.8" font-weight="600" fill="#EAD7B5" letter-spacing="3" text-anchor="middle" opacity="0.9">
+      살롱 레브
+    </text>
+  </g>
+
+  <!-- Typography Right Side (Light for Dark Theme) -->
+  <g transform="translate(136, 0)">
+    <!-- Brand Headline: SALON RÊVE -->
+    <text x="0" y="58" font-family="'Cormorant Garamond', 'Didot', 'Georgia', serif" font-size="42" font-weight="400" fill="#FDFBF7" letter-spacing="7">
+      SALON RÊVE
+    </text>
+
+    <!-- Thin Divider Line -->
+    <line x1="2" y1="72" x2="310" y2="72" stroke="url(#whiteGoldGrad)" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- Subtitle: KOREAN HAIR ATELIER & HEAD SPA -->
+    <text x="2" y="88" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="600" fill="#C5A880" letter-spacing="4.5">
+      KOREAN HAIR ATELIER &amp; HEAD SPA
+    </text>
+
+    <!-- Location & Heritage: CARY, NC • SEOUL GANGNAM -->
+    <text x="2" y="104" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="400" fill="#A8A29E" letter-spacing="3">
+      CARY, NORTH CAROLINA • SEOUL HERITAGE
+    </text>
+  </g>
+</svg>
